@@ -11,7 +11,7 @@ title:  "Basic Array"
 -> 같이 묶어서 넣으면 최적화 가능
 
     ex) int a
-        int b        -> alpa[3] = {a,b,c}  -> alpa fk
+        int b        -> alpa[3] = {a,b,c}  
         int c     
 
 **re 변수란? 데이터 저장공간 이름 
