@@ -30,7 +30,7 @@ title:  "구조체 기초(Structure)"
       - - > '.'은 컴퓨터가 저장한다는 뜻으로 알아들음    
       - - <u>"구조체 변수 안에있는 변수 이름에 값을 저장한다."</u>
 
-  Struct Sample {  
+        Struct Sample {  
         int var1;
         int var2;
         char var3;};  
@@ -49,11 +49,11 @@ title:  "구조체 기초(Structure)"
     (3)  
       - struct 구조체이름 변수 선언과 저장 활용
   
-  struct Point {  
+       struct Point {  
         int x;  
         int y;};  
-  int main () {  
-    struct Point p1;
+        int main () {  
+        struct Point p1;
     struct Point p2;      
     p1.x = -17;  
     p1.y = 17;}  
@@ -66,7 +66,7 @@ title:  "구조체 기초(Structure)"
   
     (4) 예시 문제: 국영수 점수와 총점,평균,석차를 저장하는 구조체   
   
-  struct Students {  
+      struct Students {  
     /*int kor;
     int eng;
     int math;*/            // 데이터가 연관되어 있고,데이터 타입이 같으면 -> 배열
@@ -85,7 +85,7 @@ title:  "구조체 기초(Structure)"
   2.구조체 심화  
     (1) 구조체를 포함한 구조체   
   
-  struct Score {  
+      struct Score {  
   int kor;  
   int eng;  
   int math;}    
@@ -104,7 +104,7 @@ title:  "구조체 기초(Structure)"
    
     (2) 문자열을 저장할 구조체  
      
-     Struct Person {  
+         Struct Person {  
      char name[10];  
      int age;  
      char addr [255];};
@@ -121,7 +121,7 @@ title:  "구조체 기초(Structure)"
       - 아래코드 일때, Person 은 태그라고 하고, P 는 타입이름이라고 한다.  
       - 타입이름을 쓰면 struct 태그를 int main 에서 생략 할 수 있다. -> <u>익명구조체</u>
         
-     typedef struct Point{  
+         typedef struct Point{  
      int x;  
      int y; }P;  
        
@@ -142,7 +142,7 @@ title:  "구조체 기초(Structure)"
   (4) 구조체의 역참조  
     - 구조체 변수로 구조체 안에 들어있는 변수의 값을 나타낼 수 있다.  
         
-      typedef struct Point{  
+          typedef struct Point{  
       int x;  
       int y; }P;   
       P p1 = {-17,17};  
