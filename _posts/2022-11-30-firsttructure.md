@@ -77,7 +77,7 @@ title:  "구조체 기초(Structure)"
         int rank; };  
         int main () {  
         struct Students s1;  
-        s1.scores = {{98,77,87},259,9,2};  
+        s1.scores; 
         // <u>s1.scores[0] = 98; ...   s1.total =259;... 할 수도 있지만 최적화를 위해 대괄호 써도 된다</u>  
       
 - 메모리 공간 상황   
