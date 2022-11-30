@@ -11,13 +11,13 @@ title:  "구조체 기초(Structure)"
       - struct를 선언을 했다고 데이터가 저장되는 것은 x   
       - 구조체 변수 b를 선언해야 b 데이터 공간에 구조체 Sample 변수들을 저장할 수 있다.
 
-  Struct Sample {  
+      Struct Sample {  
         int var1;
         int var2;
         char var3;}  
-   int main () {  
-     int a;
-     struct Sample b; }  
+       int main () {  
+        int a;
+        struct Sample b; }  
          
 - 메모리 공간 상황  
 
