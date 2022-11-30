@@ -77,7 +77,7 @@ title:  "구조체 기초(Structure)"
         int rank; };  
         int main () {  
         struct Students s1;  
-        s1.scores; 
+        s1.scores{%raw%}{{98,78,88},259,2}{%endraw%}
         // <u>s1.scores[0] = 98; ...   s1.total =259;... 할 수도 있지만 최적화를 위해 대괄호 써도 된다</u>  
       
 - 메모리 공간 상황   
@@ -97,7 +97,7 @@ title:  "구조체 기초(Structure)"
       int rank;};  
     
       int main () {  
-      struct Student s1 = {{98,88,89},259,98,2};  
+      struct Student s1 = {%raw%}{{98,88,89},259,98,2}{%endraw%};  
     
  - 배열처럼 구조체도 구조체 안에서 활용할 수 있다.  
  - 메모리 공간 상황은 (4) 와 같다.    
@@ -113,7 +113,7 @@ title:  "구조체 기초(Structure)"
         struct Person p1;  
         strcpy_s(p1.name,7."홍길동");  
         p1.age =23;  
-        strcpy_s(p1.addr,4,"용산");}  
+        strcpy_s(p1.addr,4,"용산");
       
 - 문자열은 선언과 저장을 같이 할 수 없다. 문자열 저장은 <u>strcpy_s</u> 사용  
   
@@ -126,14 +126,14 @@ title:  "구조체 기초(Structure)"
         int y; }P;  
        
         int main () {
-        P points [3] = {{1,2},{3,4,}{6,3}};  
+        P points [3] = {%raw%}{{1,2},{3,4,}{6,3}}{%endraw%};  
      
          P points [3];
         P points [0].x = 1;  
         P points [0].y = 2;                     //네 개  저장법, P p1 매모리 공간 상황은 다르다 
        
         P points [3];
-        P points [0] = {1,2};  }  
+        P points [0] = {1,2};  
        
          P p1 ={-17,17};
       
