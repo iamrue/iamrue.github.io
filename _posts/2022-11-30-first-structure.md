@@ -34,12 +34,12 @@ title:  "구조체 기초(Structure)"
         int var1;
         int var2;
         char var3;};  
-   int main () {  
-     int a;
-     struct Sample b;  
-     b.var1 = 2;   
-     b.var2 = 4;  
-     b.var3 ="홍길동"}    
+        int main () {  
+        int a;
+        struct Sample b;  
+        b.var1 = 2;   
+        b.var2 = 4;  
+        b.var3 ="홍길동"}    
          
 - 메모리 공간 상황  
 
@@ -67,18 +67,18 @@ title:  "구조체 기초(Structure)"
     (4) 예시 문제: 국영수 점수와 총점,평균,석차를 저장하는 구조체   
   
       struct Students {  
-    /*int kor;
-    int eng;
-    int math;*/            // 데이터가 연관되어 있고,데이터 타입이 같으면 -> 배열
+        /*int kor;
+        int eng;
+        int math;*/            // 데이터가 연관되어 있고,데이터 타입이 같으면 -> 배열
     
-    int scores [3];
-    int total;
-    double avg  
-    int rank; };  
-    int main () {  
-    struct Students s1;  
-    s1.scores = {{98,77,87},259,9,2};  
-    // <u>s1.scores[0] = 98; ...   s1.total =259;... 할 수도 있지만 최적화를 위해 대괄호 써도 된다</u>  
+        int scores [3];
+        int total;
+        double avg  
+        int rank; };  
+        int main () {  
+        struct Students s1;  
+        s1.scores = {{98,77,87},259,9,2};  
+        // <u>s1.scores[0] = 98; ...   s1.total =259;... 할 수도 있지만 최적화를 위해 대괄호 써도 된다</u>  
       
 - 메모리 공간 상황   
   
