@@ -96,8 +96,8 @@ title:  "구조체 기초(Structure)"
       double avg;  
       int rank;};  
     
-  int main () {  
-  struct Student s1 = {{98,88,89},259,98,2};  
+      int main () {  
+      struct Student s1 = {{98,88,89},259,98,2};  
     
  - 배열처럼 구조체도 구조체 안에서 활용할 수 있다.  
  - 메모리 공간 상황은 (4) 와 같다.    
