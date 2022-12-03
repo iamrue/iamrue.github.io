@@ -34,12 +34,12 @@ title:  "JV- 메소드 기초"
   호출  
   printName ("이지수");  
   //()에 값을 안넣어주면 -> 에러  
-  // <span style="color:red">인자가 있는 메소드는 무조건 데이터 타입에 맞는 값이 있는 호출을 해주어야 한다.</span>  
+  // !!!! 인자가 있는 메소드는 무조건 데이터 타입에 맞는 값이 있는 호출을 해주어야 한다. !!!!
   ```  
     
 - 인자 o 리턴o  
 ```java  
- - 선언
+ 선언
 public static String getEvolution  (String mon){
 	String eMon = "";
 	 if(mon.equals("꼬부기")) {
@@ -52,7 +52,7 @@ public static String getEvolution  (String mon){
 		 }
 	 return eMon;   
    
- - 호출  
+ 호출  
  String eMon = getEvolution("꼬부기");
 		System.out.println(eMon);  
       
@@ -60,8 +60,7 @@ public static String getEvolution  (String mon){
      저장한 값을 return 이 main 으로 튕겨준다. 결국 출력되는 eMon 은 메소드에서 기능한 값이 출력된다.
  
  ```    
- 
- **<span style="color:red">REVIEW</span> **  
+ **REVIEW**  
    - 변수의 생애 주기  
      변수의 범위 (라이프 사이클/ 생애주기)
 -> 만들어지는 시점 : 변수를 선언하는 코드를 컴퓨터가 만났을 때
@@ -70,32 +69,33 @@ public static String getEvolution  (String mon){
    -  위 코드의 메소드 선언에서 IF 문장안에 eMon을 선언하면 안된다. -> 그 코드블럭 외에서 eMon 변수가 사용되면  
  인식이 안된다. 
      
-- 오버로딩 : 인자 두개 이상  <span style="color:red">매우 중요</span>
+- 오버로딩 : 인자 두개 이상  !! 매우 중요
   ```java  
-  - 선언
+  선언
   public static void printName(String name, int age) {
 	System.out.println("이름:"+name);	
 	System.out.println("나이:"+age);	}  
-  - 호출  
+  호출  
   printName("이지수",22); 
   ```  
     
 - 메소드의 전역변수 활용  
   - 인자 o 리턴x  
-   ```java   
-    //선언
+  ```java   
+    선언
    public static void setName(String name) {
 	MainClass01.name=name;    
     
    // 매개 name을 main 전역 변수에 저장하고 싶을 때  
    // 어떤 name 인지 정확히 표현해줄것 (MainClass01.name) 
   
-   // 호출  
+   호출  
   setName("피카추");  
   System.out.println("전역변수 name :"+name);  
   
-  // 피카추가 출력됨 
-   ```  
+  // 피카추가 출력됨  
+  ```    
+  
  - 전역변수 값을 가져오는 메소드 인자 x 리턴 o   
   ```java  
   //선언
@@ -108,7 +108,7 @@ public static String getEvolution  (String mon){
       
   // return 이 전역변수 name을 튕겨주면 저장할 공간이 필요함   
   -> strName 을 선언해야하는 이유
-  <u>*메소드의 호출은 값으로 사용 할 수 없음</u>
+  <u>*메소드의 호출은 값으로 사용 할 수 없음</u>  
   ``` 
  
   
