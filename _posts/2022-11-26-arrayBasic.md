@@ -72,15 +72,17 @@ title:  "Basic Array"
    
    sum = sum+koreaArray[n] }
    
-   < 배열의 길이가 정해 지지 않은 n 일떄> -> 보루
+   < 배열의 길이가 정해 지지 않은 n 일떄> -> 보류  
    
+  ```java 
    int n = 0;
    imt i;
    
    for (i=0; i=<n, i++) {
    scanf_s ("%d", koreaAraay[i]);
     n++
-   }
+   }  
+```
     
    
    (2) 문자 배열
@@ -88,11 +90,13 @@ title:  "Basic Array"
    - char 의 데이터 크기는 1이기 떄문에 
      배열의 크기 = 배열의 길이 이다.
      
-     - 문자열만 특별하게 출력할 떄 배열 이름을 통해 문자열 전체를 출력 시킬 수 있다.
-       ex) 
+   - 문자열만 특별하게 출력할 떄 배열 이름을 통해 문자열 전체를 출력 시킬 수 있다.
+       ex)   
+       ```
        char var4[] = "Hello World~!";
         printf("%s", var4); //-> Hello World~!출력
-        printf("%c", var4[0]);// charater H 출력
+        printf("%c", var4[0]);// charater H 출력   
+      ```
    
    
    
