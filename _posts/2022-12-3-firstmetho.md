@@ -98,16 +98,16 @@ public static String getEvolution  (String mon){
   
  - 전역변수 값을 가져오는 메소드 인자 x 리턴 o   
   ```java  
-  //선언
+   선언
   public static String getName() {	
 	 return MainClass01.name;}    
    
- //호출  
- String strName = getName();
-		System.out.println("전역변수 name :"+strName);  
+  호출  
+  String strName = getName();
+ System.out.println("전역변수 name :"+strName);  
       
   // return 이 전역변수 name을 튕겨주면 저장할 공간이 필요함   
-  -> strName 을 선언해야하는 이유
+   strName 을 선언해야하는 이유
   <u>*메소드의 호출은 값으로 사용 할 수 없음</u>  
   ``` 
  
