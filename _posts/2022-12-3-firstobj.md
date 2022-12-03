@@ -40,7 +40,6 @@ title : "JV 객체기초"
 		
 	public void autopilot() {
 		System.out.println(model+"자율주행을 합니다.");}    
-
  ```  
 
 - 객체화  
