@@ -58,15 +58,15 @@ public static String getEvolution  (String mon){
       
   // 호출에서 "꼬부기"가 들어오면 equals 로 참 , 거짓을 판별해서 eMon 에 어니부기 아니면 거북왕을 저장한다.   
      저장한 값을 return 이 main 으로 튕겨준다. 결국 출력되는 eMon 은 메소드에서 기능한 값이 출력된다.
- 
- ```    
+   
+```    
  **REVIEW**  
    - 변수의 생애 주기  
      변수의 범위 (라이프 사이클/ 생애주기)
 -> 만들어지는 시점 : 변수를 선언하는 코드를 컴퓨터가 만났을 때
 -> 사라지는 시점: 변수 선언이 속한 코드블록의 끝을 만났을 때  
   
-   -  위 코드의 메소드 선언에서 IF 문장안에 eMon을 선언하면 안된다. -> 그 코드블럭 외에서 eMon 변수가 사용되면  
+-  위 코드의 메소드 선언에서 IF 문장안에 eMon을 선언하면 안된다. -> 그 코드블럭 외에서 eMon 변수가 사용되면  
  인식이 안된다. 
      
 - 오버로딩 : 인자 두개 이상  !! 매우 중요
@@ -98,13 +98,13 @@ public static String getEvolution  (String mon){
   
  - 전역변수 값을 가져오는 메소드 인자 x 리턴 o   
   ```java  
-   선언
+  선언
   public static String getName() {	
 	 return MainClass01.name;}    
    
   호출  
   String strName = getName();
- System.out.println("전역변수 name :"+strName);  
+  System.out.println("전역변수 name :"+strName);  
       
   // return 이 전역변수 name을 튕겨주면 저장할 공간이 필요함   
    strName 을 선언해야하는 이유
